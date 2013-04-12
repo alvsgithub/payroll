@@ -79,15 +79,15 @@
                                 //if ($this->session->userdata('logged_in') == true) {
                                     $user = new User();
                                     $role_id = $this->session->userdata('sess_role_id');
-                                    $branch = $user->exist_module($role_id, 'Branch');
-                                    $departement = $user->exist_module($role_id, 'Departement');
-                                    $tax_employee = $user->exist_module($role_id, 'Tax_Employee');
-                                    $employee_status = $user->exist_module($role_id, 'Employee_Status');
+                                    $branch = $user->exist_module($role_id, 'Branches');
+                                    $departement = $user->exist_module($role_id, 'Departements');
+                                    $tax_employee = $user->exist_module($role_id, 'Taxes_Employees');
+                                    $employee_status = $user->exist_module($role_id, 'Employees_Status');
                                     $marital_status = $user->exist_module($role_id, 'Marital_Status');
-                                    $title = $user->exist_module($role_id, 'Title');
-                                    $component = $user->exist_module($role_id, 'Component');
-                                    $salary = $user->exist_module($role_id, 'Salary');
-                                    $staff = $user->exist_module($role_id, 'Staff');
+                                    $title = $user->exist_module($role_id, 'Titles');
+                                    $component = $user->exist_module($role_id, 'Components');
+                                    $salary = $user->exist_module($role_id, 'Salaries');
+                                    $staff = $user->exist_module($role_id, 'Staffs');
                                     $assets = $user->exist_module($role_id, 'Assets');
                                     $users = $user->exist_module($role_id, 'Users');
                                     $role_details = $user->exist_module($role_id, 'Role_Details');

@@ -38,16 +38,24 @@
               <td><div class="span3"><?php echo form_input($staff_name); ?></div></td>
           </tr>
           <tr>
+              <td width="20%">Approve by</td>
+              <td><div class="span3"><?php echo form_input($staff_name); ?></div></td>
+          </tr>
+          <tr>
               <td>Tanggal pengajuan</td>
               <td><div class="span2"><?php echo form_input($date_request); ?></div></td>
           </tr>
           <tr>
-              <td>Jumlah hari izin</td>
-              <td><div class="span1"><?php echo form_input($izin_jumlah_hari); ?></div></td>
-            </tr>
+            <td>Mulai cuti</td>
+            <td><div class="span2"><?php echo form_input($date_start); ?></div></td>
+          </tr>
           <tr>
-            <td>Note</td>
-            <td><div style="width:700px"><?php echo form_textarea($izin_note); ?></div></td>
+            <td>Akhir cuti</td>
+            <td><div class="span2"><?php echo form_input($date_end); ?></div></td>
+          </tr>
+          <tr>
+            <td>Status</td>
+            <td><div class="span1"><?php echo form_dropdown("status", $status); ?></div></td>
           </tr>
         </table>
         <input type="submit" name="save" class="btn btn-primary" />

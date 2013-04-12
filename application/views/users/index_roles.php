@@ -62,12 +62,12 @@ function HeaderLink($value, $key, $col, $dir) {
             <?php search_form(array("" => "By", "role_name" => "Name")); ?>
         </div>
 
-        <table class="table boo-table table-bordered table-condensed table-hover">
+        <table class="table fpTable table-hover">
             <thead>
                 <tr>
-                    <th><?php echo HeaderLink("Role ID", "role_id", $col, $dir); ?></th>
-                    <th><?php echo HeaderLink("Role Name", "role_name", $col, $dir); ?></th>
-                    <th width="10">Action</th>
+                    <th width="15%"><?php echo HeaderLink("Role ID", "role_id", $col, $dir); ?></th>
+                    <th width="80%"><?php echo HeaderLink("Role Name", "role_name", $col, $dir); ?></th>
+                    <th width="5%">Action</th>
                 </tr>
             </thead>
             <?php
@@ -83,7 +83,7 @@ function HeaderLink($value, $key, $col, $dir) {
                                 <span class="caret"></span>
                             </a>
                             <ul class="dropdown-menu pull-right">
-                                <li><?php echo anchor('users/roles/' . $row->role_id . '/role_details/index/', '<i class="icon-list"></i> Add Privileges'); ?></li>
+                                <!-- <li><?php echo anchor('users/roles/' . $row->role_id . '/role_details/index/', '<i class="icon-list"></i> Add Privileges'); ?></li> -->
                                 <li><?php echo anchor('users/edit_role/' . $row->role_id, '<i class="icon-pencil"></i> Edit'); ?></li>
                                 <li><?php echo anchor('users/delete_role/' . $row->role_id, '<i class="icon-trash"></i> Delete', array('onclick' => "return confirm('Are you sure want to delete?')")); ?></li>
                             </ul>

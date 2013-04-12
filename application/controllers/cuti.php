@@ -50,11 +50,15 @@ class Cuti extends CI_Controller{
   }
   
   function add(){
+    $data["form_action"] = "cuti/create";
+    $data["id"] = null;
     $data["staff_id"] = null;
     $data["staff_name"] = array("name"=>"staff_name", "id"=>"staff");
+    $data["approveby_staff_id"] = "";
     $data["date_request"] = array("name"=>"date_request", "class"=>"datepicker");
     $data["date_start"] = array("name"=>"date_start", "class"=>"datepicker");
-    $data["date_start"] = array("name"=>"date_start", "class"=>"datepicker");
+    $data["date_end"] = array("name"=>"date_end", "class"=>"datepicker");
+    $data["status"] = array("pending"=>"Pending", "approve"=>"Approve", "decline"=>"Decline");
     $this->load->view("cuti/form", $data);
   }
 }

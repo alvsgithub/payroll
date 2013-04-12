@@ -56,8 +56,8 @@ function HeaderLink($value, $key, $col, $dir) {
             <div class="icon">
                 <span class="ico-tag"></span>
             </div>
-            <h1>Assets
-                <small>Manage assets</small>
+            <h1>Cuti
+                <small>Manage cuti</small>
             </h1>
         </div>
         <br class="cl" />

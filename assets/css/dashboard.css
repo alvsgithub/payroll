@@ -570,6 +570,32 @@ div#search{
   background: #fff!important;
 }
 
+.custom-check{
+  cursor: pointer;
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background: url(../images/check.png) no-repeat;
+}
+
+.custom-check.active{
+  background-position: 0 -20px;
+}
+
+.custom-check input[type=checkbox]{
+  display: none;
+}
+
+.dashed-li{
+  list-style:none; 
+  margin: 0;
+}
+
+.dashed-li li{
+  border-bottom: 1px dashed #e0e0e0;
+  padding: 3px 0;
+}
+
 /*override*/
 .select2-container{
   min-width: 180px;
